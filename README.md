@@ -23,6 +23,12 @@ that prompt, switch on **Allow from this source**, then go back and tap **Instal
 > If Google Play Protect shows an "App scan recommended" step, let the scan finish
 > before retrying — a timed-out scan can report "App not installed".
 
+**Which file?** Each release carries two APKs:
+`Ballistic-Calculator-<version>.apk` for 64-bit ARM phones — essentially every phone
+sold since 2016 — and `Ballistic-Calculator-<version>-universal.apk`, which adds the
+older 32-bit ARM build. Install the first one; if Android refuses it, the universal
+APK is the one for that device.
+
 ## What it does
 
 - **Trajectory table** from 50 m to 1000 m: drop, windage, MOA, kinetic energy,
