@@ -46,7 +46,12 @@ APK is the one for that device.
 ## Earlier versions
 
 Every build is listed on the [Releases page](../../releases) with its own APK and
-notes. Once there are earlier builds, the five most recent will be tabled here.
+notes. The five most recent:
+
+| Version | Released | 64-bit APK | Universal APK | What changed |
+| --- | --- | --- | --- | --- |
+| [1.1.0](../../releases/tag/v1.1.0) | 15 Nov 2026 | 30.4 MB | 87.6 MB | Licence keys, a 14-day trial, a licence screen and a first-launch EULA |
+| [1.0.0](../../releases/tag/v1.0.0) | 15 Nov 2026 | 30.4 MB | 87.5 MB | First release |
 
 ## Updates
 
