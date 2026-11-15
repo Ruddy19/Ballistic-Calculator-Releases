@@ -59,6 +59,11 @@ Ballistic Calculator is **commercial software, licensed and not sold**. The
 end user licence terms are in [EULA.md](EULA.md) and are also shown in the app on
 first launch.
 
+The app runs a **14-day trial** with every feature unlocked. After that a licence
+key is required: it is checked on the device, so no connection is needed to keep
+using the app. Keys are issued to an email address, and revoked keys are listed in
+[revoked.json](revoked.json), which the app reads when it can reach it.
+
 Bundled open-source packages remain under their own licences; the app lists every
 one of them, with its verbatim licence text, under **Privacy → Third-party licences**.
 
