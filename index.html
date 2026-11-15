@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ballistic Calculator — long-range ballistics for Android</title>
+<meta name="description" content="Ballistic Calculator is an offline long-range ballistics app for Android: G1 trajectory table, wind drift matrix, ammunition and caliber library, and current weather from MET Norway.">
+<style>
+  :root {
+    --accent: #c9a227;
+    --accent-dark: #a8871d;
+    --ink: #1a1f26;
+    --muted: #5a6169;
+    --line: #d9dde2;
+    --bg: #f7f5ef;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink);
+    line-height: 1.6;
+    background: #fff;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  header { text-align: center; padding: 40px 0 8px; }
+  header img { width: 100%; max-width: 220px; height: auto; margin-bottom: 18px; border-radius: 22%; }
+  h1 { font-size: 2rem; margin: 0 0 6px; }
+  .tagline { color: var(--accent-dark); font-size: 1.15rem; margin: 0 0 4px; font-weight: 600; }
+  .sub { color: var(--muted); margin: 0 0 24px; }
+  .cta {
+    display: inline-block; background: var(--accent); color: #14181d;
+    text-decoration: none; font-weight: 700; font-size: 1.05rem;
+    padding: 14px 28px; border-radius: 8px;
+  }
+  .cta:hover { background: var(--accent-dark); color: #fff; }
+  .cta-note { display: block; color: var(--muted); font-size: .85rem; margin-top: 8px; }
+  h2 { font-size: 1.25rem; margin: 34px 0 8px; }
+  ol, ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent-dark); }
+  .note {
+    border-left: 3px solid var(--accent); background: var(--bg);
+    padding: 10px 14px; margin: 14px 0; font-size: .95rem;
+  }
+  .features { display: grid; gap: 10px; grid-template-columns: 1fr; }
+  .features div { border: 1px solid var(--line); border-radius: 6px; padding: 10px 14px; }
+  .features b { display: block; }
+  footer {
+    border-top: 1px solid var(--line); margin-top: 40px; padding: 18px 0 40px;
+    color: var(--muted); font-size: .9rem;
+  }
+  @media (min-width: 620px) { .features { grid-template-columns: 1fr 1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img src="icon.png" alt="Ballistic Calculator app icon">
+    <h1>Ballistic Calculator</h1>
+    <p class="tagline">Long-range ballistics, offline, in your pocket</p>
+    <p class="sub">A G1 trajectory solver with a wind matrix, a load library and live
+      field weather — built for the range and the paddock, with no signal.</p>
+    <p>
+      <a class="cta" href="https://github.com/Ruddy19/Ballistic-Calculator-Releases/releases/latest">Download the latest APK</a>
+      <span class="cta-note">Android 8.0+ · works offline · installs over the previous version</span>
+    </p>
+  </header>
+
+  <h2>Install</h2>
+  <ol>
+    <li>Tap <b>Download the latest APK</b> on your Android phone — the newest version is
+      always the top entry on the releases page.</li>
+    <li>Open the downloaded file. The first time, Android asks you to allow installing
+      apps from this source: tap <b>Settings</b>, switch on <b>Allow from this source</b>,
+      then go back and tap <b>Install</b>.</li>
+    <li>If Google Play Protect offers an "App scan recommended" step, let the scan finish
+      before retrying — a scan that times out can report "App not installed".</li>
+  </ol>
+  <p>Updates install over the top and keep your saved setups, custom calibers and preferences.</p>
+
+  <h2>What it does</h2>
+  <div class="features">
+    <div><b>Trajectory table</b>Drop, windage, MOA, energy, time of flight and scope clicks out to 1000 m.</div>
+    <div><b>Wind matrix</b>Drift and holds across 2–20 m/s crosswinds, in cm, MOA or clicks.</div>
+    <div><b>Loads and calibers</b>Bundled factory loads and bullets, 150+ cartridges, and your own custom calibers.</div>
+    <div><b>Field weather</b>Current conditions from MET Norway fill temperature, station pressure and wind.</div>
+    <div><b>Your scope</b>Pick a ⅛, ¼, ⅓, ½ or 1 MOA click, or type any value — the tables follow it.</div>
+    <div><b>Offline</b>Everything except the weather tab runs with no connection and saves on the device.</div>
+  </div>
+
+  <h2>Updates</h2>
+  <p>Every release is published on the
+    <a href="https://github.com/Ruddy19/Ballistic-Calculator-Releases/releases">releases page</a>
+    with its own notes. Installing a newer APK over the top keeps your saved setups,
+    custom calibers and preferences.</p>
+
+  <h2>Licensing</h2>
+  <p>Ballistic Calculator is <b>commercial software, licensed and not sold</b>, under the
+    <a href="EULA.md">end user licence agreement</a> shown in the app on first launch.
+    Bundled open-source packages stay under their own licences; the app lists all of them,
+    with verbatim licence text, under <b>Privacy → Third-party licences</b>.</p>
+  <p><b>Privacy:</b> no account, no analytics, no advertising. See the
+    <a href="PRIVACY.md">privacy policy</a>. Your inputs and custom calibers stay on the
+    device, and the only network request is the weather tab asking MET Norway for the
+    conditions where you are.</p>
+
+  <div class="note">
+    The application source lives in a private repository. This site is the public
+    distribution channel and holds release artifacts only.
+  </div>
+
+  <footer>
+    Ballistic Calculator ·
+    <a href="https://github.com/Ruddy19/Ballistic-Calculator-Releases/releases">All releases</a> ·
+    <a href="https://github.com/Ruddy19/Ballistic-Calculator-Releases">Repository</a>
+  </footer>
+
+</div>
+</body>
+</html>
