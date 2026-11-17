@@ -33,8 +33,14 @@ APK is the one for that device.
 
 - **Trajectory table** from 50 m to 1000 m: drop, windage, MOA, kinetic energy,
   time of flight and scope clicks for your own click value.
-- **Wind matrix** — drift and holds across 2–20 m/s crosswinds, in cm, MOA or clicks.
-- **G1 point-mass solver** with zero range selected from presets or any distance.
+- **Wind matrix** — drift and holds across 2–20 m/s crosswinds (5–45 mph), in
+  cm/inches, MOA or clicks.
+- **G1 and G7 point-mass solver** — the BC's own drag function is used, so a
+  G7-quoted match bullet is applied and solved as G7.
+- **Shot angle correction** — enter the incline to the target and the drops
+  read the holds for uphill and downhill shots.
+- **Metric or imperial** — every screen reads in yards, fps, inches, mph, inHg
+  and °F, or metric; the display toggle never changes the saved setup.
 - **Ammunition lookup** over a bundled library of published factory loads, component
   bullets and reference starting loads, searchable by cartridge.
 - **Caliber catalogue** of 150+ rifle cartridges, plus any custom caliber you add.
@@ -50,6 +56,7 @@ notes. The five most recent:
 
 | Version | Released | 64-bit APK | Universal APK | What changed |
 | --- | --- | --- | --- | --- |
+| [1.2.0](../../releases/tag/v1.2.0) | 18 Nov 2026 | 30.5 MB | 87.6 MB | G7 drag model, imperial units, shot-angle (cosine) correction |
 | [1.1.0](../../releases/tag/v1.1.0) | 15 Nov 2026 | 30.4 MB | 87.6 MB | Licence keys, a 14-day trial, a licence screen and a first-launch EULA |
 | [1.0.0](../../releases/tag/v1.0.0) | 15 Nov 2026 | 30.4 MB | 87.5 MB | First release |
 
