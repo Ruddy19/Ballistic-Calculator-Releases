@@ -56,6 +56,7 @@ notes. The five most recent:
 
 | Version | Released | 64-bit APK | Universal APK | What changed |
 | --- | --- | --- | --- | --- |
+| [1.2.2](../../releases/tag/v1.2.2) | 18 Nov 2026 | 30.5 MB | 87.6 MB | Fixes the Inputs tab crashing on open and its broken layout — installs over any previous version |
 | [1.2.1](../../releases/tag/v1.2.1) | 18 Nov 2026 | 30.5 MB | 87.6 MB | Install hardening: trial clock survives clock changes, signing-key rotation support |
 | [1.2.0](../../releases/tag/v1.2.0) | 18 Nov 2026 | 30.5 MB | 87.6 MB | G7 drag model, imperial units, shot-angle (cosine) correction |
 | [1.1.0](../../releases/tag/v1.1.0) | 15 Nov 2026 | 30.4 MB | 87.6 MB | Licence keys, a 14-day trial, a licence screen and a first-launch EULA |
